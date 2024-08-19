@@ -16,11 +16,14 @@
         <!-- Styles -->
         @livewireStyles
     </head>
+    
     <body class="font-sans antialiased">
         <x-banner />
 
     <!-- Header -->
      @include('layouts.partials.header')
+
+     @yield('hero')
 
     <main class="container mx-auto px-5 flex flex-grow">
         {{$slot}}
